@@ -30,7 +30,7 @@ export default function SobreNos(){
             {'\n'}{'\n'}
             📍endereço: Rua Evangelista de Souza - 1471 - Sala 1
         </Texto>
-        <Image source={require('../../assets/Cartao.png')} style={estilos.img_sobre}/>
+        <Image source={require('../../assets/QRCode.png')} style={estilos.img_sobre}/>
         <Texto style={estilos.texto_sobre}>Exemplo Video:</Texto>
         <VideoView player={player} style={estilos.video} allowsFullscreen allowsPictureInPicture></VideoView>
     </ScrollView>
@@ -59,9 +59,9 @@ const estilos = StyleSheet.create({
         color: "#f7d5cc",
     },
     img_sobre: {
-        height: 295,
+        height: 300,
         alignSelf: "center",
-        width: 502,
+        width: 500,
         marginTop: 30,
         marginBottom: 30,
     },

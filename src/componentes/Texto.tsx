@@ -3,15 +3,7 @@ import {Text, StyleSheet} from "react-native";
 
 export default function Texto({children, style}:any){
 
-    //Determina a estilização padrão do texto
-    let estilo = estilos.padrao;
-
-    //Verifica se o texto é para ser exibido em negrito
-    if(style?.fontWeight == "bold"){
-        estilo = estilos.bold;
-    }
-
-    return <Text style={[estilo, style]}>{children}</Text>
+    return <Text style={[estilos.padrao, style]}>{children}</Text>
 }
 
 const estilos = StyleSheet.create({
