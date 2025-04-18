@@ -16,7 +16,7 @@ const Tab = createBottomTabNavigator();
 function Menu(){
   return <Tab.Navigator screenOptions ={({route})=>({
               tabBarIcon: ({focused, color, size})=>{
-                let iconName;
+                let iconName: any;
 
                 if(route.name === "Sobre Nós"){
                   iconName = focused
