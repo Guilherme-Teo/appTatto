@@ -6,7 +6,7 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import SobreNos from "./src/telas/SobreNos";
-import Produtos from "./src/telas/Produtos";
+import Produtos from "./src/telas/produtos";
 import ListaDeDesejos from "./src/telas/ListaDeDesejos";
 import Perfil from "./src/telas/Perfil";
 

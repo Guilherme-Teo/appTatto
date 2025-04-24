@@ -3,7 +3,7 @@ import { FlatList, View, Image, StyleSheet } from "react-native";
 import Item from "./item";
 export default function Index({itens}:any){
     return <View style={estilos.fundo}>
-        <Image source={require('../../../assets/logo/logo.png')} style={estilos.logo} resizeMode="contain" />
+        <Image source={require('../../../assets/Logo.png')} style={estilos.logo} resizeMode="contain" />
         <FlatList
                 data = {itens.lista}
                 renderItem = {({item}) => <Item item={item}/>}
