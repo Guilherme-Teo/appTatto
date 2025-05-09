@@ -14,7 +14,7 @@ export default function Index({itens}:any){
 
 const estilos = StyleSheet.create({
     fundo: {
-        backgroundColor: "#252728",
+        backgroundColor: "#282174",
         paddingVertical: 12,
         paddingHorizontal: 16,
         paddingBottom: 180,

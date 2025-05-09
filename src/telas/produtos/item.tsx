@@ -16,16 +16,16 @@ export default function Item({item:{id, nome, descricao, imagem}}:any){
 
 const estilos = StyleSheet.create({
     fundo: {
-        backgroundColor: "#252728",
+        backgroundColor: "#282174",
     },
     texto_item: {
-        color: "#C6C8C7",
+        color: "#f7d5cc",
         fontSize: 18,
         marginBottom: 16
     },
     titulo:{
         marginTop: 30,
         fontSize: 25,
-        color: "#C6C8C7",
+        color: "#f7d5cc",
     }
 })
