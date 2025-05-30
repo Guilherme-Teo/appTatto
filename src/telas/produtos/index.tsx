@@ -6,8 +6,8 @@ export default function Index({itens}:any){
         <Image source={require('../../../assets/Logo.png')} style={estilos.logo} resizeMode="contain" />
         <FlatList
                 data = {itens.lista}
-                renderItem = {({item}) => <Item item={item}/>}
-                keyExtractor = {(item)=>item.nome}
+                renderItem = {({item}) => <Item prod={item}/>}
+                keyExtractor = {itens.lista.id}
             />
     </View>
 }
@@ -20,9 +20,8 @@ const estilos = StyleSheet.create({
         paddingBottom: 180,
     },
     logo: {
-        width: 300,
-        height: 300,
+        width: 250,
+        height: 250,
         alignSelf: "center",
-        margin: -80,
     },
 })
