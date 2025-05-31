@@ -1,39 +1,39 @@
 import React from "react";
-import {StatusBar, StyleSheet, ScrollView, Image} from "react-native";
+import { StatusBar, StyleSheet, ScrollView, Image } from "react-native";
 import { useVideoPlayer, VideoView } from "expo-video";
-
 import Texto from "../componentes/Texto";
 
-export default function SobreNos(){
+export default function SobreNos() {
+    const player = useVideoPlayer(require('../../assets/EditTatto.mp4'));
 
-    //Indica o video e coloca ele em loop
-    const player = useVideoPlayer('https://commondatastorage.googleapis.com/gtv-videos-bucket/sample/BigBuckBunny.mp4', player =>{
-        player.loop = true,
-        player.play()
-    })
+    React.useEffect(() => {
+        if (player) {
+            player.loop = true;
+            player.play();
+        }
+    }, [player]);
 
-    return <ScrollView style={estilos.fundo}>
-        <StatusBar />
-        <Image source={require('../../assets/Logo.png')} style={estilos.logo} resizeMode="contain"/>
-        <Texto style={estilos.titulo}>Sobre Mim</Texto>
-        <Texto style={estilos.texto_sobre}>
-            Malu Garrucho:
-            {'\n'}
-            - Tatuadora 🌻
-            {'\n'}
-            - Artista 🎨🖌️
-            {'\n'}
-            {'\n'}
-            Agenda aberta para tatuagens e quadros
-            {'\n'}
-            Orçamentos via instagram ou Whatsapp.
-            {'\n'}{'\n'}
-            📍endereço: Rua Evangelista de Souza - 1471 - Sala 1
-        </Texto>
-        <Image source={require('../../assets/QRCode.png')} style={estilos.img_sobre}/>
-        <Texto style={estilos.texto_sobre}>Exemplo Video:</Texto>
-        <VideoView player={player} style={estilos.video} allowsFullscreen allowsPictureInPicture></VideoView>
-    </ScrollView>
+    return (
+        <ScrollView style={estilos.fundo}>
+            <StatusBar />
+            <Image source={require('../../assets/Logo.png')} style={estilos.logo} resizeMode="contain" />
+            <Texto style={estilos.titulo}>Sobre Mim</Texto>
+            <Texto style={estilos.texto_sobre}>
+                -----------------------------------------------------------------
+                {'\n'}Oi! Sou a Malu Garrucho, tatuadora apaixonada por transformar ideias em arte na pele...
+                {'\n'}
+                {'\n'}✨ “Tatuagens feitas com carinho de forma fácil e confortável.”
+                {'\n'}
+                {'\n'}📍Rua Evangelista de Souza,1471-Sala 1
+                {'\n'}📞 (11) 91963-5767
+                {'\n'}📸 Instagram: @malugarrucho.tattoo
+                {'\n'}-----------------------------------------------------------------
+            </Texto>
+            <Image source={require('../../assets/QRCode.png')} style={estilos.img_sobre} />
+            <Texto style={estilos.texto_sobre}>Exemplo Video:</Texto>
+            <VideoView player={player} style={estilos.video} allowsFullscreen allowsPictureInPicture />
+        </ScrollView>
+    );
 }
 
 const estilos = StyleSheet.create({
@@ -65,10 +65,17 @@ const estilos = StyleSheet.create({
         marginTop: 30,
         marginBottom: 30,
     },
-    video:{
-        width: 350,
-        height: 275,
-        alignSelf: "center",
-        marginTop: 30,
-    }
+video: {
+    width: 520,
+    height: 380,
+    alignSelf: "center",
+    marginTop: 30,
+    marginBottom: 30,
+    borderColor: "#f7d5cc",
+    borderWidth: 3,
+    borderRadius: 100, // completamente arredondado
+    overflow: "hidden",
+    backgroundColor: "#1f1a5c",
+}
+
 })

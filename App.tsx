@@ -7,11 +7,13 @@ import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import SobreNos from "./src/telas/SobreNos";
 import ListaDeDesejos from "./src/telas/ListaDeDesejos";
-import Perfil from "./src/telas/Perfil";
 
 //Menu PRODUTOS
 import Produto from './src/telas/produtos';
 import MockProdutos from './src/mocks/listaProdutos'
+
+//Menu PERFIL
+import Perfil from '../appTatto/src/telas/perfil'
 
 function MenuProdutos(){
   return <Produto {...MockProdutos} />

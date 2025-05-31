@@ -1,0 +1,106 @@
+import { StyleSheet } from "react-native";
+
+const Styles = StyleSheet.create({
+  container: {
+    flex: 1,
+    justifyContent: 'center',
+    backgroundColor: '#282174', 
+  },
+  cardContainer: {
+    marginTop: 20,
+    backgroundColor: '#D1C4E9', 
+    width: '90%',
+    alignSelf: 'center',
+    borderRadius: 12,
+    padding: 16,
+    elevation: 4,
+    shadowColor: '#000',
+    shadowOpacity: 0.2,
+    shadowOffset: { width: 0, height: 2 },
+    shadowRadius: 4,
+  },
+  fotoTiradaContainer: {
+    width: 200,
+    height: 200,
+    alignSelf: 'center',
+    borderRadius: 10,
+    marginBottom: 10,
+    overflow: 'hidden',
+    backgroundColor: '#B39DDB', 
+  },
+  camera: {
+    width: '80%',
+    height: 300,
+    alignSelf: 'center',
+    borderRadius: 20,
+    overflow: 'hidden',
+    marginTop: 10,
+    backgroundColor: '#9575CD',
+  },
+  cameraContainer: {
+    flex: 1,
+    flexDirection: 'row',
+    backgroundColor: 'transparent',
+  },
+  cameraVirarBotao: {
+    position: 'absolute',
+    bottom: 20,
+    left: 30,
+  },
+  cameraBotao: {
+    position: 'absolute',
+    bottom: 20,
+    right: 30,
+  },
+  cameraTexto: {
+    fontSize: 18,
+    color: 'white',
+    textAlign: 'center',
+    marginTop: 8,
+  },
+  text: {
+    fontSize: 16,
+    marginLeft: 10,
+    color: "#6A1B9A", 
+  },
+  input: {
+    width: '80%',
+    marginBottom: 12,
+    alignSelf: 'center',
+    fontSize: 16,
+    borderWidth: 1,
+    borderColor: '#9575CD',
+    borderRadius: 8,
+    padding: 8,
+    backgroundColor: '#FFF',
+  },
+  fotoTirada: {
+    width: '80%',
+    height: 300,
+    alignSelf: 'center',
+    borderRadius: 20,
+    overflow: 'hidden',
+    marginTop: 10,
+    backgroundColor: '#CE93D8',
+  },
+  message: {
+    textAlign: 'center',
+    paddingVertical: 12,
+    fontSize: 14,
+    color: '#4A148C', 
+  },
+  buttonContainer: {
+    flexDirection: 'row',
+    justifyContent: 'space-around',
+    marginVertical: 20,
+  },
+  button: {
+    backgroundColor: '#7B1FA2', 
+    paddingVertical: 12,
+    paddingHorizontal: 24,
+    borderRadius: 8,
+    alignItems: 'center',
+  },
+});
+
+export default Styles;
