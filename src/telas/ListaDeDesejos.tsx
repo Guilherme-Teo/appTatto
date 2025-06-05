@@ -7,7 +7,7 @@ import Texto from "../componentes/Texto";
  export default function ListaDeDesejos(){
     return <ScrollView style = {estilos.fundo}>
     <StatusBar/>
-    <Texto style = {estilos.titulo}>Estamos trablhando nisso</Texto>
+    <Texto style = {estilos.titulo}>{'\n'}Estamos trabalhando nisso ⚒️</Texto>
     </ScrollView>
 
     

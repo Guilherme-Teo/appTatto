@@ -1,15 +1,23 @@
 import React from "react";
-import { FlatList, View, Image, StyleSheet } from "react-native";
+import { FlatList, View, Image, StyleSheet, SafeAreaView, StatusBar } from "react-native";
 import Item from "./item";
-export default function Index({itens}:any){
-    return <View style={estilos.fundo}>
-        <Image source={require('../../../assets/Logo.png')} style={estilos.logo} resizeMode="contain" />
-        <FlatList
-                data = {itens.lista}
-                renderItem = {({item}) => <Item prod={item}/>}
-                keyExtractor = {itens.lista.id}
-            />
-    </View>
+import Texto from '../../componentes/Texto';
+
+export default function Index({ itens }: any) {
+    return (
+        <SafeAreaView style={{ flex: 1, backgroundColor: "#282174" }}>
+            <View style={estilos.fundo}>
+                <Image source={require('../../../assets/Logo.png')} style={estilos.logo} resizeMode="contain" />
+                <Texto style={estilos.titulo}>Portfólio</Texto>
+                <FlatList
+                    data={itens.lista}
+                    renderItem={({ item }) => <Item prod={item} />}
+                    keyExtractor={item => item.id.toString()}
+                    contentContainerStyle={{ paddingBottom: 100 }}
+                />
+            </View>
+        </SafeAreaView>
+    );
 }
 
 const estilos = StyleSheet.create({
@@ -17,11 +25,19 @@ const estilos = StyleSheet.create({
         backgroundColor: "#282174",
         paddingVertical: 12,
         paddingHorizontal: 16,
-        paddingBottom: 180,
+        flex: 1,
     },
     logo: {
         width: 250,
         height: 250,
         alignSelf: "center",
     },
-})
+    titulo: {
+        textAlign: "center",
+        fontSize: 25,
+        color: "#f7d5cc",
+        fontWeight: "bold",
+        paddingBottom: 30,
+        paddingTop: 30,
+    },
+});

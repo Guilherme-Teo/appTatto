@@ -3,7 +3,7 @@ import { StyleSheet } from "react-native";
 
 const estilosProdutos = StyleSheet.create({
     corFundo: {
-        backgroundColor: "purple",
+        backgroundColor: "#282174",
         paddingBottom: 35,
     },
     titulo: {
@@ -21,7 +21,7 @@ const estilosProdutos = StyleSheet.create({
         borderWidth: 3,
         borderColor: "black",
         backgroundColor: "#faefce",
-        marginBottom: 70,
+        marginBottom: 20,
     },
     nomeProduto: {
         color: "#282174",
@@ -30,7 +30,7 @@ const estilosProdutos = StyleSheet.create({
         paddingBottom: 5,
     },
     descProduto: {
-        color: "#f7d5cc",
+        color: "#282174",
         fontSize: 16,
         paddingBottom: 10,
     },
@@ -46,11 +46,11 @@ const estilosProdutos = StyleSheet.create({
         alignSelf: "center"
     },
     modal: {
-        backgroundColor: "#282174",
+        backgroundColor: "#faefce",
         width: "85%",
         height: "75%",
         borderWidth: 4,
-        borderColor: "#f7d5cc",
+        borderColor: "black",
         paddingLeft: 10,
         paddingRight: 10,
     },

@@ -32,7 +32,7 @@ function Menu(){
                   ? 'woman'
                   : 'woman-outline';
                 }
-                if(route.name === "Produtos"){
+                if(route.name === "Portfólio"){
                   iconName = focused
                   ? 'brush'
                   : 'brush-outline';
@@ -54,7 +54,7 @@ function Menu(){
               headerShown: false,
             })}>
             <Tab.Screen name = "Sobre Nós" component = {SobreNos}/>
-            <Tab.Screen name = "Produtos" component = {MenuProdutos}/>
+            <Tab.Screen name = "Portfólio" component = {MenuProdutos}/>
             <Tab.Screen name = "Lista de desejos" component = {ListaDeDesejos}/>
             <Tab.Screen name = "Perfil" component = {Perfil}/>
         </Tab.Navigator>

@@ -42,7 +42,7 @@ export default function Item({prod:{id,nome,imagem,descricao,slider}}:any){
                             ))}
                             </PagerView>
                             <TouchableOpacity onPress={()=>acaoAbreFecha(false)}>
-                                <Ionicons name="close" size={30} color="purple"/>
+                                <Ionicons name="close" size={30} color="#282174"/>
                             </TouchableOpacity>
                         </View>
                     </View>

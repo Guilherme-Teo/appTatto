@@ -30,7 +30,7 @@ export default function SobreNos() {
                 {'\n'}-----------------------------------------------------------------
             </Texto>
             <Image source={require('../../assets/QRCode.png')} style={estilos.img_sobre} />
-            <Texto style={estilos.texto_sobre}>Exemplo Video:</Texto>
+            <Texto style={estilos.titulo}>🎨Alguns trabalhos:</Texto>
             <VideoView player={player} style={estilos.video} allowsFullscreen allowsPictureInPicture />
         </ScrollView>
     );
@@ -66,7 +66,7 @@ const estilos = StyleSheet.create({
         marginBottom: 30,
     },
 video: {
-    width: 520,
+    width: 320,
     height: 380,
     alignSelf: "center",
     marginTop: 30,
