@@ -6,13 +6,6 @@ import Texto from "../componentes/Texto";
 export default function SobreNos() {
     const player = useVideoPlayer(require('../../assets/EditTatto.mp4'));
 
-    React.useEffect(() => {
-        if (player) {
-            player.loop = true;
-            player.play();
-        }
-    }, [player]);
-
     return (
         <ScrollView style={estilos.fundo}>
             <StatusBar />

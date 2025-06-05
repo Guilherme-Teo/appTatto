@@ -36,7 +36,7 @@ export default function Index(){
                 <CameraView facing={facing} style={styles.camera}>
                     <View style={styles.cameraContainer}>
                         <TouchableOpacity style={styles.cameraVirarBotao} onPress={toggleCameraFacing}>
-                            <Ionicons name="reload" size={30} color="purple"></Ionicons>
+                            <Ionicons name="reload" size={30} color="#282174"></Ionicons>
                         </TouchableOpacity>
                     </View>
                 </CameraView>

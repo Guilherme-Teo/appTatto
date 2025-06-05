@@ -8,7 +8,7 @@ const Styles = StyleSheet.create({
   },
   cardContainer: {
     marginTop: 20,
-    backgroundColor: '#D1C4E9', 
+    backgroundColor: '#faefce', 
     width: '90%',
     alignSelf: 'center',
     borderRadius: 12,
@@ -61,7 +61,7 @@ const Styles = StyleSheet.create({
   text: {
     fontSize: 16,
     marginLeft: 10,
-    color: "#6A1B9A", 
+    color: "#282174", 
   },
   input: {
     width: '80%',

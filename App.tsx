@@ -6,7 +6,6 @@ import { createBottomTabNavigator } from "@react-navigation/bottom-tabs";
 import Ionicons from 'react-native-vector-icons/Ionicons';
 
 import SobreNos from "./src/telas/SobreNos";
-import ListaDeDesejos from "./src/telas/ListaDeDesejos";
 
 //Menu PRODUTOS
 import Produto from './src/telas/produtos';
@@ -14,6 +13,9 @@ import MockProdutos from './src/mocks/listaProdutos'
 
 //Menu PERFIL
 import Perfil from '../appTatto/src/telas/perfil'
+
+//Menu CUIDADOS
+import Cuidados from "./src/cuidados/cuidados"; 
 
 function MenuProdutos(){
   return <Produto {...MockProdutos} />
@@ -27,7 +29,7 @@ function Menu(){
               tabBarIcon: ({focused, color, size})=>{
                 let iconName: any;
 
-                if(route.name === "Sobre Nós"){
+                if(route.name === "Sobre mim"){
                   iconName = focused
                   ? 'woman'
                   : 'woman-outline';
@@ -37,10 +39,10 @@ function Menu(){
                   ? 'brush'
                   : 'brush-outline';
                 }
-                if(route.name === "Lista de desejos"){
+                if(route.name === "Cuidados"){
                   iconName = focused
-                  ? 'heart'
-                  : 'heart-outline';
+                  ? 'water'
+                  : 'water-outline';
                 }
                 if(route.name === "Perfil"){
                   iconName = focused
@@ -53,9 +55,9 @@ function Menu(){
               tabBarInactiveColor: 'gray',
               headerShown: false,
             })}>
-            <Tab.Screen name = "Sobre Nós" component = {SobreNos}/>
+            <Tab.Screen name = "Sobre mim" component = {SobreNos}/>
             <Tab.Screen name = "Portfólio" component = {MenuProdutos}/>
-            <Tab.Screen name = "Lista de desejos" component = {ListaDeDesejos}/>
+            <Tab.Screen name = "Cuidados" component = {Cuidados}/>
             <Tab.Screen name = "Perfil" component = {Perfil}/>
         </Tab.Navigator>
 }
